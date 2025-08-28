@@ -19,7 +19,7 @@ function ArticleForm() {
             errorDiv.textContent = "";
         }
 
-        const articleData = { img, title, subtitle, text, link1, author: user.user.username, userId: user.user.id };
+        const articleData = { image: img, title, subtitle, text, link1, author: user.user.username, userId: user.user.id };
         const res = await fetch("/api/news", {
             method: "POST",
             headers: {

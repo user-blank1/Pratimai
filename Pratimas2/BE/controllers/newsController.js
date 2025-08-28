@@ -13,6 +13,7 @@ export function news_get(req, res) {
 export async function news_post(req, res) {
     const { title, subtitle, text, link1, image, author, userId } = req.body;
 
+    console.log(image);
     const newArticle = new News({
         title,
         subtitle,
