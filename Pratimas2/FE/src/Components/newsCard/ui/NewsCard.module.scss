@@ -1,0 +1,31 @@
+.card {
+    overflow: hidden;
+}
+
+.edit {
+    top: 10px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.showEdit {
+    background: gray;
+    filter: blur(5px);
+    filter: brightness(0.5);
+}
+@media (max-width: 992px) {
+    .card {
+        width: 80vw;
+        .container {
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 993px) {
+    .card {
+        width: 16vw;
+        .container {
+            width: 100%;
+        }
+    }
+}

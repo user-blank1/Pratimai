@@ -1,0 +1,12 @@
+import { Router } from "express";
+const router = Router();
+import { news_post } from "../controllers/newsController.js";
+import { news_get } from "../controllers/newsController.js";
+import { news_put } from "../controllers/newsController.js";
+import requireAuth from "../middleware/requireAuth.js";
+import { news_delete } from "../controllers/newsController.js";
+router.post("/news", requireAuth, news_post);
+router.get("/news", news_get);
+router.delete("/news/:id", requireAuth, news_delete);
+router.put("/news/:id", requireAuth, news_put);
+export default router;

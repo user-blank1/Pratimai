@@ -1,0 +1,78 @@
+.regForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #5a5a7a;
+    margin-bottom: 0.2rem;
+}
+
+input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #d0d0e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6c63ff;
+}
+
+.button {
+    padding: 0.8rem 1rem;
+    background: linear-gradient(90deg, #6c63ff 0%, #48c6ef 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(76, 99, 255, 0.08);
+}
+
+.button:hover {
+    background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+    box-shadow: 0 4px 16px rgba(76, 99, 255, 0.15);
+}
+
+@media (max-width: 800px) {
+    .regForm {
+        width: 100%;
+        max-width: 90vw;
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .regForm {
+        padding: 1rem 0.5rem;
+        max-width: 320px !important;
+        width: 100%;
+        border-radius: 0.6rem;
+    }
+    .button {
+        font-size: 1rem;
+        padding: 0.7rem 0.7rem;
+    }
+    input {
+        font-size: 0.95rem;
+        padding: 0.6rem 0.7rem;
+    }
+}
