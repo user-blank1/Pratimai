@@ -8,6 +8,7 @@ function Navbar() {
     const { user, dispatch } = useAuthContext();
 
     const handleLogout = () => {
+        localStorage.setItem("justLoggedOut", "true");
         localStorage.removeItem("user");
         dispatch({ type: "LOGOUT" });
         navigate("/");

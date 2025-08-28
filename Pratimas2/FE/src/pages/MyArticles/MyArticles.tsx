@@ -23,7 +23,12 @@ function MyArticles() {
     useEffect(() => {
         if (loading) return;
         if (!user) {
-            navigate("/auth/login");
+            if (localStorage.getItem("justLoggedOut") === "true") {
+                localStorage.removeItem("justLoggedOut");
+                navigate("/");
+            } else {
+                navigate("/auth/login");
+            }
             return;
         }
         if (!user.user?.id || !user.token) return;
