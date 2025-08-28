@@ -12,7 +12,7 @@
 
 ## launching frontend:
 
-6. cd FE
+6. cd FE (from Pratimai/Pratimas1)
 7. npm i
 8. npm run dev
 
@@ -30,6 +30,6 @@
 
 ## launching frontend:
 
-6. cd FE
+6. cd FE(from Pratimai/Pratimas2)
 7. npm i
 8. npm run dev
