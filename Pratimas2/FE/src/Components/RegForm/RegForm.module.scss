@@ -1,18 +1,22 @@
-.regForm {
+@mixin flex($justify: center, $align: center, $direction: row) {
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+.regForm {
+    @include flex(center, center, column);
     gap: 1.2rem;
     background: #fff;
     padding: 2rem 1.5rem;
     border-radius: 1rem;
     width: 100%;
     margin: 0 auto;
-}
-
-.inputGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+    .inputGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
 }
 
 label {

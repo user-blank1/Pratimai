@@ -3,6 +3,7 @@ import styles from "./RegForm.module.scss";
 // @ts-expect-error: wdhbwuoadyibkwuadhgv
 import { useLogin } from "../../hooks/useLogin";
 import { useNavigate } from "react-router-dom";
+
 function RegForm() {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
